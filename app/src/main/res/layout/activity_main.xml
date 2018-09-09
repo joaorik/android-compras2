@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/chbItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mouse (29,90)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <CheckBox
+        android:id="@+id/chbItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teclado + Mouse (79,90)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <CheckBox
+        android:id="@+id/chbItem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor LED (390,79)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <CheckBox
+        android:id="@+id/chbItem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cooler para Notebook (69,90)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <CheckBox
+        android:id="@+id/chbItem5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HD Externo 500GB (177,65)"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Compra"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <TextView
+        android:id="@+id/txtvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:text="Total"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="443dp" />
+</android.support.constraint.ConstraintLayout>
