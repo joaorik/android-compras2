@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
     private Button btnTotal;
     private TextView txtTotal;
 
-    double total, save, disconto; // 25%;
+    double total, save, desconto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,16 +65,19 @@ public class MainActivity extends Activity {
 
                 if (rdBoleto.isChecked()) {
                     save = 100 - 5;
-                    disconto = (total * save) / 100;
-                    txtTotal.setText(String.format("%.2f", disconto));
+                    desconto = (total * save) / 100;
+                    String vlTotal = String.format("%.2f", total);
+                    txtTotal.setText("Total: " + vlTotal + " Desconto: " + String.format("%.2f", desconto));
                 }
 
                 if (rdCartao.isChecked()) {
-                    txtTotal.setText(String.format("%.2f", total));
+                    txtTotal.setText("Total: " + String.format("%.2f", total));
                 }
 
                 if (rdCartaoParc.isChecked()) {
-                    txtTotal.setText("Total: " + Math.round(total) + "12 X R$ " + Math.round(total / 12));
+                    String vlTotal = String.format("%.2f", total);
+                    String parcela = String.format("%.2f", total/12);
+                    txtTotal.setText("Total: " + vlTotal + " 12 X R$ " + parcela);
                 }
             }
         });
